@@ -44,20 +44,20 @@ namespace Deliverable_two
 
 
 
-            if (b == 1)
+            if (b == 0)
             {
                 Console.WriteLine("You should wear sneakers");
 
             }
-            else if (b == 2)
+            else if (b >= 1 & b <= 4)
             {
                 Console.WriteLine("You should go in a sedan");
             }
-            else if (b == 3)
+            else if (b >= 5 & b <= 10)
             {
                 Console.WriteLine("You should go in a VW Bus");
             }
-            else if (b == 4)
+            else if (b >= 11)
             {
                 Console.WriteLine("You should go in an airplane");
             }
