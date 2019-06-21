@@ -24,54 +24,49 @@ namespace Deliverable_two
 
             a = Convert.ToInt32(mood);
             b = Convert.ToInt32(npeople);
-             
+
+            var activity = "hello";
+
             if (a == 1)
             {
-                Console.WriteLine("You shouls go Stock Car Racing");
+                activity = "Stock Car Racing";
             }
             else if (a == 2)
             {
-                Console.WriteLine("You should go Hiking");
+                activity = "Hiking";
             }
             else if (a == 3)
             {
-                Console.WriteLine("You should go Skydiving");
+                activity = "Skydiving";
             }
             else if (a == 4)
             {
-                Console.WriteLine("You should go to Taco Bell");
+                activity = "Taco Bell";
             }
 
-
+            var vehicle = "hello";
 
             if (b == 0)
             {
-                Console.WriteLine("You should wear sneakers");
+                vehicle = " sneakers";
 
             }
             else if (b >= 1 & b <= 4)
             {
-                Console.WriteLine("You should go in a sedan");
+                vehicle = "a sedan";
             }
             else if (b >= 5 & b <= 10)
             {
-                Console.WriteLine("You should go in a VW Bus");
+                vehicle = "a VW Bus";
             }
             else if (b >= 11)
             {
-                Console.WriteLine("You should go in an airplane");
+                vehicle = "an airplane";
             }
 
-             /* Alternative solution that also works
-             
-            string[] activity;
-            string[] vehicle;
-            
-            activity = new string[4] { "Stock Car Racing", "Hiking", "Skydiving", "go to Taco Bell" };
-            vehicle = new string[4] { "sneakers", "a sedan", "a volkswagen bus", "an airplane" };
 
-            Console.WriteLine("You should go {0} and travel in {1}", activity[a - 1], vehicle[b - 1]);
-            */
+            Console.WriteLine("You should go {0} and travel in {1} ", activity, vehicle);
+
 
             Console.WriteLine("Press any key to exit");
             Console.ReadLine();
